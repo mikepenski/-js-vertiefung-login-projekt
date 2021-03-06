@@ -1,0 +1,33 @@
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2rem 2rem 2rem 7rem;
+    > .container{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+
+        }
+        #main-menu{
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    a{
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        font-size: 20px;
+                        &.welcome{
+                            color: $primary-light;
+                        }
+                    }
+                }
+            }
+            .log-out{
+                color: $red;
+            }
+        }
+    }
+}

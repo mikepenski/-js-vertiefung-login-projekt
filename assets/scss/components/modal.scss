@@ -1,0 +1,117 @@
+#loginModal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        max-width: 1000px;
+        margin: 1.75rem auto;
+        .modal-content{
+            background: $primary-light;
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 100%;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 10px;
+            outline: 0;
+            @media (min-width: 768px){
+                width: 70vw;
+                max-width: 1200px;
+            }
+            @media (max-width: 768px){
+                width: 100vw;
+            }
+            .modal-header{
+                margin-bottom: 15px;
+                text-align: center;
+                img{
+                    margin-top: -40px;
+                    border-radius: 50%;
+                    @media (max-width: 768px){
+                        width: 100px;
+                    }
+                }
+            }
+            .modal-body{
+                padding: 0 2rem 2rem 2rem;
+                margin: 0 auto;
+                @media (max-width: 768px){
+                    padding: 1rem;
+                    width: 100%;
+                }
+                h2{
+                    color: $primary;
+                    font-size: 3rem;
+                    display: block;
+                    margin-bottom: 2rem;
+                    text-align: center;
+                    @media (max-width: 768px){
+                        font-size: 1.5rem;
+                    }
+                }
+                #loginForm{
+                    position: relative;
+                    input{
+                        display: block;
+                        background: #C4C4C4;
+                        font-size: 30px;
+                        line-height: 40px;
+                        padding: 10px 23px;
+                        width: 500px;
+                        margin-bottom: 1.5rem;
+                        border: none;
+                        @media (max-width: 768px){
+                            font-size: 20px;
+                        }
+                        &[type="submit"]{
+                            background: $secondary;
+                            text-transform: uppercase;
+                            transition: all .5s;
+                            &:hover{
+                                cursor: pointer;
+                                background: $primary;
+                                color: white;
+                            }
+                        }
+                        &.alert{
+                            background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 166"><polygon fill="red" points="83 26.8 65.7 61.8 27.1 67.4 55 94.7 48.5 133.2 83 115 117.5 133.2 111 94.7 138.9 67.4 100.3 61.8 83 26.8 83 26.8"/></svg>'); 
+                            background-size: .5em .5em;
+                            background-position: 99% 8%;
+                            background-repeat: no-repeat;
+                            color: red;
+                        }
+                        @media (max-width: 768px){
+                            width: 100%;
+                        }
+                    }
+                    #errorMessage{
+                        font-size: 1.25rem;
+                        color: red;
+                        position: absolute;
+                        bottom: 0;
+                        transform: translateY(2rem);
+                    }
+                }
+            }
+        }
+    }
+ 
+  }
+
