@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+
+    <header>
+        <img class="header-icon" src="img/eye.png">
+        <nav class="nav-top">
+            <div class="welcome"> >welcome, <span class="user-name"></span></div>
+            <a class="logout-link" href="#">>log out</a>
+        </nav>
+    </header>
+    <main>
+        <div class="left">
+            <img src="img/Illustration.png">
+        </div>
+        <div class="right">
+            <h1>Top Secret</h1>
+            <h4>You may not click the button.</h4>
+            <button class="btn-big">>Secret Content</button>
+        </div>
+    </main>
+    <div class="modal-overlay show">
+        <div class="modal">
+            <h1>>Login</h1>
+            <form class="login-form">
+                <input type="text" placeholder="username" name="username">
+                <input placeholder="password" type="password" name="password">
+                <button class="btn">Submit</button>
+            </form>
+            <div class="form-errors"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
